@@ -1,0 +1,701 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/*-------------------- Variable CSS -------------------*/
+
+:root{
+    --bg-color:#fff;
+    --text-color:black;
+    --hover:hsl( 224 , 89%, 60%);
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941rem;
+}
+
+/*-------------------- Body -------------------*/
+body.active{
+    --text-color:#fff;
+    --bg-color: #0f0c27;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/*-------------------- Header -------------------*/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+header.shadow{
+    box-shadow: 0 0 4px rgb(14, 55, 54 / 15%);
+}
+
+
+/*-------------------- Menu -------------------*/
+
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+/*-------------------- Logo Ahsan -------------------*/
+
+.logo{
+    
+    font-size: 32px;
+    color: var(--text-color);
+    font-family: "lato";
+}
+
+.logo span {
+    font-size: 10px;
+    color: #07f399;
+    font-family: "Great Vibes", cursive;
+}
+
+/*-------------------- navbar -------------------*/
+
+.navbar {
+    display: flex;
+}
+
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*-------------------- For click to change color -------------------*/
+.navbar a:hover {
+    color: var(--hover);
+}
+
+/*-------------------- Section -------------------*/
+
+section {
+    padding: 50px 10%;
+}
+
+*::selection {
+    color: white;
+    background: hsl( 224 , 89%, 60%);
+}
+
+/*-------------------- Home -------------------*/
+
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-image{
+    display: flex;
+    width: 350px;
+    border:4px solid aqua;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.home-image img{
+    width: 100%;
+    /* min-height: 50vh; */
+}
+
+/*-------------------- Home Social Link and icon -------------------*/
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social a {
+    margin-bottom: 1rem;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+/*-------------------- click to change color -------------------*/
+
+.social a:hover {
+    color:  hsl( 224 , 89%, 60%);
+}
+
+/*-------------------- Home text -------------------*/
+
+.home-text span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size: 1rem;
+    font-family: "lato";
+    /* font-size: var(--medium-font);*/
+}
+
+
+.home-text h1 {
+    /* color: hsl( 224 , 89%, 60%) !important; */
+    /* font-size: var(--big-font); */
+    letter-spacing: 1px;
+    font-weight:550;
+    font-size: 2.5rem;
+}
+.home-text h1 span{
+    color: hsl( 224 , 89%, 60%);
+    font-size: var(--big-font);
+}
+
+
+.home-text h2 {
+    /* text-transform: uppercase;
+    letter-spacing: 1px;*/
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: "lato";
+}
+
+
+.home-text p {
+    font-size: var(--p-font);
+    font-weight: 400;
+    margin: 0.7rem 0 1rem;
+}
+
+/*-------------------- Button for download Resume -------------------*/
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: hsl( 224 , 89%, 60%);
+    padding: 0.7rem 1.3rem;
+    border-radius: 50px;
+    border: 1px solid hsl( 224 , 89%, 60%);
+
+}
+
+
+.btn:hover {
+  background: hsl( 224 , 89%, 60%);
+  color: white;  
+}
+
+.btn:focus-visible {
+    background-color: hsl( 224 , 89%, 60%);
+    color: white;
+}
+
+.btn:active,
+.btn:focus {
+  background-color: hsl( 224 , 89%, 60%);
+  color: white;
+}
+
+/*-------------------- About -------------------*/
+
+.heading {
+    
+    text-align: center;
+}
+
+.heading h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:500;
+    font-size: 1rem;
+    font-family: "lato";  
+    color: hsl( 224 , 89%, 60%);
+    font-size: 30px;
+    
+}
+
+.heading span {
+    font-size: var(--p-font);
+    color: black;
+}
+
+.about-container {
+    display: grid;
+    gap: 1rem;
+    margin: 15px;
+}
+
+
+.about-text p {
+    font-size: var(--p-font);
+    /* text-align: justify; */
+}
+
+.about-text img{
+    float: right;
+    width: 30%;
+    width: 400px;
+    border:3px solid aqua;
+    padding: 1rem;
+    /* margin-top: 2rem; */
+}
+
+/*-------------------- Highlight text -------------------*/
+
+.text-point {
+    font-size: var(--p-font);
+    color: #3b1ef8;
+    font-weight: normal;
+}
+
+/*-------------------- My information -------------------*/
+
+.information {
+    margin: 1rem 0 1.4rem;
+}
+
+
+.information .info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.4rem;
+} 
+
+.information .info-box .bx {
+    font-size: 22px;
+}
+
+.phone-number {
+    color: black;
+    cursor: pointer;
+}
+
+.phone-number:hover {
+    color: hsl( 224 , 89%, 60%);
+}
+
+.mail-info a {
+    color: black;
+    cursor: pointer;
+}
+
+.mail-info span:hover {
+    color: hsl( 224 , 89%, 60%);
+
+}
+
+
+/*-------------------- Skills -------------------*/
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 20px;
+}
+
+.bars-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3,
+span {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    background: hsla(256, 16%, 86%, 0.4);
+    border-radius: 0.4rem;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.4rem;
+    background: hsl( 224 , 89%, 60%);
+    border-radius: 0.4rem;
+}
+
+.java-bar {
+    width: 90%;
+}
+
+.cpp-bar {
+    width: 70%;
+}
+
+.c-bar {
+    width: 80%;
+}
+
+.html-bar {
+    width: 85%;
+}
+
+.css-bar {
+    width: 75%;
+}
+
+/*-------------------- Projects -------------------*/
+.services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+}
+
+.services-box {
+    padding: 30px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid hsl( 224 , 89%, 60%);
+    border-right: 2px solid hsl( 224 , 89%, 60%);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    margin-right: 5rem;
+}
+
+.services-box:hover {
+    background-color: hsl( 224 , 89%, 60%);
+}
+
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+}
+
+.services-box:hover h3 {
+    color: #fff;
+}
+
+.services-box .bx {
+    padding-top: 2rem;
+    font-size: 54px;
+    color: hsl( 224 , 89%, 60%);
+}
+
+.services-box:hover .bx {
+    color: white;
+}  
+
+.services-box a {
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+}
+
+.services-box:hover a {
+    color: #8b8a8f;
+}
+
+/*-------------------- Contact -------------------*/
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+}
+
+form input,
+textarea {
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid #e6ecf8;
+  outline: none;
+  background: transparent;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+form input:active,
+textarea:active {
+  border: 1px solid black;
+}
+
+form input:focus,
+textarea:focus {
+  border: 1px solid black;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+/*-------------------- Submit Button -------------------*/
+
+.contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: transparent;
+    color: hsl( 224 , 89%, 60%) ;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid hsl( 224 , 89%, 60%) ;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 16.5px;
+}
+
+.contact-button:hover {
+    background: hsl( 224 , 89%, 60%);
+    color: white;
+}
+
+/*-------------------- Footer -------------------*/
+
+.footer{
+    background:#f8f8fd;
+}
+
+.footer .box-container{
+    font-family: "lato";
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:550;
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--black);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+    color:  hsl( 224 , 89%, 60%)
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box p{
+    font-family: "lato";
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: var(--light-color);
+    padding: 0.5rem 0;
+}
+
+/*-------------------- Copyright -------------------*/
+
+.footer-bottom{
+    background-color: rgba(237, 233, 231, 0.96);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p{
+    color: black;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+/*-------------------- For Mobile -------------------*/
+@media (max-width: 991px) {
+    header {
+      padding: 18px 4%;
+    }
+  
+    section {
+      padding: 50px 4%;
+    }
+}
+  
+@media (max-width: 881px) {
+    :root {
+      --big-font: 2.7rem;
+      --medium-font: 1.4rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    :root {
+      --big-font: 2.4rem;
+      --medium-font: 1.2rem;
+    }
+  
+    header {
+      padding: 11px 4%;
+    }
+  
+    #menu-icon {
+      display: initial;
+      color: var(--text-color);
+    }
+  
+    header .navbar {
+      position: absolute;
+      top: -500px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background: whitesmoke;
+      box-shadow: 0 4px 4px #0000001a;
+      transition: 0.2s ease;
+      text-align: center;
+    }
+  
+    .navbar.active {
+      top: 100%;
+    }
+  
+    .navbar a {
+      padding: 1.5rem;
+      display: block;
+      background: whitesmoke;
+    }
+  
+    .scroll-down {
+      display: none;
+    }
+  
+    .home {
+      grid-template-columns: 0.5fr 3fr;
+    }
+  
+    .home-text {
+      grid-column: 1/3;
+      padding-left: 1.4rem;
+    }
+  
+    .home-img {
+      order: initial;
+    }
+  
+    .about-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .about-img {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .skills-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .skills-img img {
+      padding-left: 0;
+    }
+  
+    .skills-img {
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .contact-form form {
+      width: 300px;
+    }
+}
+
+  
+@media (max-width: 340px) {
+    :root {
+      --big-font: 1.7rem;
+      --medium-font: 1.1rem;
+    }
+  
+    .home-text span {
+      font-size: 1rem;
+    }
+  
+    .home-text h2 {
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  
+    .information .info-box span {
+      font-size: 1rem;
+    }
+  
+    .contact-form form {
+      width: 300px;
+    }
+  
+    .contact-button {
+      margin-left: 25%;
+    }
+    
+}
+
+/*-------------------- Experience -------------------*/
+
+@media(max-width:768px){
+    main.row{
+        grid-template-columns: 1fr;
+    }
+}
